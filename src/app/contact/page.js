@@ -1,0 +1,183 @@
+"use client";
+
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+export default function contact() {
+  const formRef = useRef(null);
+
+  const [name, setName] = useState("");
+  const [contact, setContact] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const emailRegex =
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!emailRegex.test(email) || name.trim() === "" || contact.length !== 10) {
+      alert("Please enter valid Name, Contact Number and Email");
+      return;
+    }
+
+    try {
+      await fetch("https://sheetdb.io/api/v1/c5bmb4h2j4dtx", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          data: [
+            {
+              Name: name,
+              Contact: contact,
+              Email: email,
+              Message: message,
+            },
+          ],
+        }),
+      });
+
+      if (formRef.current) {
+        emailjs.sendForm(
+          "service_egxeldj",
+          "template_ysw7f37",
+          formRef.current,
+          "sCeBvf_xHkwUmN77f"
+        );
+      }
+
+      alert("Form submitted successfully!");
+
+      setName("");
+      setContact("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong.");
+    }
+  };
+
+  return (
+    <div className="bg-white">
+
+      {/* ---------------- HERO SECTION ---------------- */}
+      <section className="relative h-[350px] bg-gray-900 flex items-center justify-center text-white">
+        <h1 className="text-4xl md:text-5xl font-bold">
+          Contact <span className="text-orange-500">Us</span>
+        </h1>
+      </section>
+
+      {/* ---------------- CONTACT SECTION ---------------- */}
+      <section className="py-20 px-6 md:px-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+
+          {/* ---------- FORM ---------- */}
+          <div className="bg-white p-10 rounded-2xl shadow-xl">
+            <h2 className="text-3xl font-bold mb-6">
+              Get In <span className="text-orange-500">Touch</span>
+            </h2>
+
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
+              <input
+                type="text"
+                name="from_name"
+                placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+              />
+
+              <input
+                type="text"
+                name="form_contact"
+                placeholder="Your Contact Number"
+                value={contact}
+                onChange={(e) =>
+                  /^[0-9]{0,10}$/.test(e.target.value) &&
+                  setContact(e.target.value)
+                }
+                className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+              />
+
+              <input
+                type="email"
+                name="from_email"
+                placeholder="Your Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"
+              />
+
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows={4}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className="w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 resize-none"
+              />
+
+              <button
+                type="submit"
+                className="w-full bg-orange-600 hover:bg-orange-700 text-white py-4 rounded-lg font-semibold transition duration-300"
+              >
+                SUBMIT FORM
+              </button>
+            </form>
+          </div>
+
+          {/* ---------- CONTACT DETAILS ---------- */}
+          <div className="bg-gray-900 text-white p-10 rounded-2xl shadow-xl flex flex-col justify-center space-y-10">
+
+            <div>
+              <h4 className="text-orange-500 font-semibold text-lg">
+                Our Location
+              </h4>
+              <p className="text-gray-300 mt-2">
+                Greater Noida, West - 201009
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-orange-500 font-semibold text-lg">
+                Phone Number
+              </h4>
+              <p className="text-gray-300 mt-2">
+                +91 9580364089
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-orange-500 font-semibold text-lg">
+                Email Address
+              </h4>
+              <p className="text-gray-300 mt-2">
+                info@savvyr.in
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* ---------------- MAP SECTION ---------------- */}
+      <section className="h-[450px] w-full">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.655790336142!2d77.42076667500748!3d28.610101285099844!2m3!1f0!2f0!3f0!2m2!1i1024!2i768!4f13.1"
+          className="w-full h-full"
+          loading="lazy"
+          allowFullScreen
+        ></iframe>
+      </section>
+
+    </div>
+  );
+}
