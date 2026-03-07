@@ -29,7 +29,7 @@ export default function Navbar() {
             className="object-contain"
           />
           <span className="text-xl font-bold">
-            N.P. <span className="text-orange-500">Infraprojects</span>
+            N.P. <span className="text-orange-500">InfraIndia</span>
           </span>
         </Link>
 

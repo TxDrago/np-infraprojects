@@ -23,8 +23,8 @@ export default function Home() {
       <CoreCompetencies />
       <ProjectCounter />
       <Visionaries />
-      <Awards />
-      <div className="w-full h-1 bg-red-600"></div>
+      {/* <Awards /> */}
+      {/* <div className="w-full h-1 bg-red-600"></div> */}
       <GetInTouch />
 
     </main>
@@ -34,9 +34,9 @@ export default function Home() {
   // -------------------------- Hero Carousel -------------------------- //
   function HeroCarousel() {
   const slides = [
-    "/images/hero/hero1.jpg",
+    "/images/hero/hero1.jpeg",
     "/images/hero/hero2.jpg",
-    "/images/hero/hero3.webp",
+    "/images/hero/hero3.jpeg",
   ];
 
   const [index, setIndex] = useState(0);
@@ -112,7 +112,7 @@ function AboutExpertise() {
           variants={fadeUp}
         >
           <Image
-            src="/images/about/about1.cms"
+            src="/images/about/about2.jpg"
             alt="About"
             width={600}
             height={400}
@@ -208,10 +208,10 @@ function ProjectCounter() {
       </h2>
 
       <div className="grid md:grid-cols-4 gap-10">
-        <Stat number="150+" label="Projects Completed" />
+        <Stat number="20+" label="Projects Completed" />
         <Stat number="20+" label="Years Experience" />
         <Stat number="500+" label="Skilled Workforce" />
-        <Stat number="12" label="States Covered" />
+        <Stat number="3" label="States Covered" />
       </div>
     </section>
   );
@@ -246,27 +246,27 @@ function Visionaries() {
 
 
 // -------------------------- Awards & Appreciations -------------------------- //
-function Awards() {
-  return (
-    <section className="py-20 bg-gray-900 text-white text-center">
-      <h2 className="text-3xl font-bold mb-12">
-        Awards & Appreciations
-      </h2>
+// function Awards() {
+//   return (
+//     <section className="py-20 bg-gray-900 text-white text-center">
+//       <h2 className="text-3xl font-bold mb-12">
+//         Awards & Appreciations
+//       </h2>
 
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <div className="bg-gray-800 p-6 rounded-xl">
-          Excellence in Infrastructure Development
-        </div>
-        <div className="bg-gray-800 p-6 rounded-xl">
-          Best Railway Contractor Award
-        </div>
-        <div className="bg-gray-800 p-6 rounded-xl">
-          Safety & Quality Recognition
-        </div>
-      </div>
-    </section>
-  );
-}
+//       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+//         <div className="bg-gray-800 p-6 rounded-xl">
+//           Excellence in Infrastructure Development
+//         </div>
+//         <div className="bg-gray-800 p-6 rounded-xl">
+//           Best Railway Contractor Award
+//         </div>
+//         <div className="bg-gray-800 p-6 rounded-xl">
+//           Safety & Quality Recognition
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
 
 //--------------------------- Get In Touch Section -------------------------- //
