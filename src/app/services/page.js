@@ -117,7 +117,7 @@ export default function Services() {
           <div className="grid md:grid-cols-4 gap-10">
 
             <div>
-              <h3 className="text-3xl font-bold text-orange-500">7+</h3>
+              <h3 className="text-3xl font-bold text-orange-500">20+</h3>
               <p>Years Experience</p>
             </div>
 
@@ -127,12 +127,12 @@ export default function Services() {
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-orange-500">100+</h3>
+              <h3 className="text-3xl font-bold text-orange-500">20+</h3>
               <p>Projects Completed</p>
             </div>
 
             <div>
-              <h3 className="text-3xl font-bold text-orange-500">1000+</h3>
+              <h3 className="text-3xl font-bold text-orange-500">500+</h3>
               <p>Workforce</p>
             </div>
 
