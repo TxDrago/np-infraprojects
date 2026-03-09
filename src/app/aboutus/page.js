@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export default function AboutUs() {
+export default function aboutus() {
   return (
     <div className="bg-white overflow-hidden">
 

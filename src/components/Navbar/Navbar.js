@@ -72,7 +72,7 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            href="/about"
+            href="/aboutus"
             onClick={() => setIsOpen(false)}
             className="block hover:text-orange-500"
           >
@@ -98,14 +98,6 @@ export default function Navbar() {
             className="block hover:text-orange-500"
           >
             Contact
-          </Link>
-
-          <Link
-            href="/contact"
-            onClick={() => setIsOpen(false)}
-            className="block bg-orange-600 text-center py-2 rounded-lg font-semibold"
-          >
-            Schedule Call
           </Link>
         </div>
       )}
