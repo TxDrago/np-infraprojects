@@ -11,32 +11,32 @@ const fadeUp = {
 const services = [
   {
     title: "Railway Construction",
-    img: "/images/services/railway.jpg",
+    img: "/images/OurServices/Service3.png",
     desc: "Construction of railway lines, track laying, ballastless tracks, bridges and railway infrastructure projects."
   },
   {
     title: "Highway & Road Construction",
-    img: "/images/services/highway.jpg",
+    img: "/images/OurServices/Service4.png",
     desc: "Execution of highway, national highway, and industrial road construction projects across India."
   },
   {
     title: "Earthwork & Excavation",
-    img: "/images/services/excavation.jpg",
+    img: "/images/OurServices/Service3.png",
     desc: "Heavy earthwork, soil cutting, grading, and excavation using modern machinery and equipment."
   },
   {
     title: "Bridge Construction",
-    img: "/images/services/bridge.jpg",
+    img: "/images/OurServices/Service3.png",
     desc: "Construction of major and minor bridges for railway and highway infrastructure."
   },
   {
     title: "Tunnel Construction",
-    img: "/images/services/tunnel.jpg",
+    img: "/images/OurServices/Service3.png",
     desc: "Execution of tunnel excavation, lining, and structural works for railway and infrastructure projects."
   },
   {
     title: "Industrial Infrastructure",
-    img: "/images/services/industrial.jpg",
+    img: "/images/OurServices/Service3.png",
     desc: "Construction of industrial roads, civil structures, and infrastructure facilities."
   }
 ];
@@ -46,12 +46,12 @@ export default function Services() {
     <div>
 
       {/* HERO */}
-      <section className="relative h-[400px] flex items-center justify-center text-white">
+      <section className="relative h-[550px] flex items-center justify-center text-white">
         <Image
-          src="/images/services/hero.jpg"
+          src="/images/OurServices/services2.png"
           alt="services"
           fill
-          className="object-cover"
+          className="object-fit-cover"
         />
 
         <div className="absolute inset-0 bg-black/60"></div>
@@ -60,7 +60,7 @@ export default function Services() {
           <h1 className="text-4xl md:text-5xl font-bold">
             Our <span className="text-orange-500">Services</span>
           </h1>
-          <p className="mt-4 text-lg">
+          <p className="mt-4 text-xl">
             Delivering high-quality infrastructure and engineering solutions
           </p>
         </div>
