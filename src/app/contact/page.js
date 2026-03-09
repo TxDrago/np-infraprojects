@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useRef } from "react";
+import Image from "next/image";
 import emailjs from "@emailjs/browser";
 
-export default function contact() {
+export default function Contact() {
   const formRef = useRef(null);
 
   const [name, setName] = useState("");
@@ -64,28 +65,39 @@ export default function contact() {
   return (
     <div className="bg-white">
 
-      {/* ---------------- HERO SECTION ---------------- */}
-      <section className="relative h-[350px] bg-gray-900 flex items-center justify-center text-white">
-        <h1 className="text-4xl md:text-5xl font-bold">
-          Contact <span className="text-orange-500">Us</span>
-        </h1>
+      {/* HERO SECTION */}
+
+      <section className="relative h-[350px] md:h-[450px] lg:h-[550px] flex items-center justify-center text-white">
+        <Image
+          src="/images/contact/Hero.png"
+          alt="services"
+          fill
+          className="object-cover"
+        />
+
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        <div className="relative text-center">
+          <h1 className="text-4xl md:text-6xl font-bold">
+            Contact <span className="text-orange-500">Us</span>
+          </h1>
+        </div>
       </section>
 
-      {/* ---------------- CONTACT SECTION ---------------- */}
+      {/* CONTACT SECTION */}
+
       <section className="py-20 px-6 md:px-16 bg-gray-100">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
 
-          {/* ---------- FORM ---------- */}
+          {/* FORM */}
+
           <div className="bg-white p-10 rounded-2xl shadow-xl">
             <h2 className="text-3xl font-bold mb-6">
               Get In <span className="text-orange-500">Touch</span>
             </h2>
 
-            <form
-              ref={formRef}
-              onSubmit={handleSubmit}
-              className="space-y-6"
-            >
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+
               <input
                 type="text"
                 name="from_name"
@@ -131,10 +143,12 @@ export default function contact() {
               >
                 SUBMIT FORM
               </button>
+
             </form>
           </div>
 
-          {/* ---------- CONTACT DETAILS ---------- */}
+          {/* CONTACT DETAILS */}
+
           <div className="bg-gray-900 text-white p-10 rounded-2xl shadow-xl flex flex-col justify-center space-y-10">
 
             <div>
@@ -165,13 +179,15 @@ export default function contact() {
             </div>
 
           </div>
+
         </div>
       </section>
 
-      {/* ---------------- MAP SECTION ---------------- */}
+      {/* MAP SECTION */}
+
       <section className="h-[450px] w-full">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.655790336142!2d77.42076667500748!3d28.610101285099844!2m3!1f0!2f0!3f0!2m2!1i1024!2i768!4f13.1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.655790336142!2d77.42076667500748!3d28.610101285099844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1"
           className="w-full h-full"
           loading="lazy"
           allowFullScreen

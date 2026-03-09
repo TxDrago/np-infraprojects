@@ -73,21 +73,21 @@ export default function aboutus() {
             Our <span className="text-orange-500">Leadership</span>
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
             <motion.div
               whileHover={{ y: -10 }}
               className="bg-white shadow-xl rounded-xl p-6"
             >
               <img
-                src="/founder.jpg"
-                className="w-full h-56 md:h-64 object-cover rounded-lg"
+                src="/images/aboutus/Owner1.jpeg"
+                className="w-full h-60 md:h-78 object-fit rounded-lg"
               />
               <h3 className="mt-4 text-lg md:text-xl font-semibold">
                 Founder Name
               </h3>
               <p className="text-orange-500 text-sm md:text-base">
-                Founder & CEO
+                MANAGING DIRECTOR
               </p>
             </motion.div>
 
@@ -96,14 +96,14 @@ export default function aboutus() {
               className="bg-white shadow-xl rounded-xl p-6"
             >
               <img
-                src="/director1.jpg"
-                className="w-full h-56 md:h-64 object-cover rounded-lg"
+                src="/images/aboutus/Owner2.jpeg"
+                className="w-full h-60 md:h-78 object-fit rounded-lg"
               />
               <h3 className="mt-4 text-lg md:text-xl font-semibold">
                 Director Name
               </h3>
               <p className="text-orange-500 text-sm md:text-base">
-                Managing Director
+                MANAGING DIRECTOR
               </p>
             </motion.div>
 
@@ -112,14 +112,14 @@ export default function aboutus() {
               className="bg-white shadow-xl rounded-xl p-6"
             >
               <img
-                src="/director2.jpg"
-                className="w-full h-56 md:h-64 object-cover rounded-lg"
+                src="/images/aboutus/Owner3.jpeg"
+                className="w-full h-60 md:h-78 object-fit rounded-lg"
               />
               <h3 className="mt-4 text-lg md:text-xl font-semibold">
                 Director Name
               </h3>
               <p className="text-orange-500 text-sm md:text-base">
-                Operations Director
+                DIRECTOR
               </p>
             </motion.div>
 

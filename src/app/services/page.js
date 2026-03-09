@@ -46,7 +46,7 @@ export default function Services() {
     <div>
 
       {/* HERO */}
-      <section className="relative h-[550px] flex items-center justify-center text-white">
+      <section className="relative h-[350px] md:h-[450px] lg:h-[550px] flex items-center justify-center text-white">
         <Image
           src="/images/OurServices/services2.png"
           alt="services"
