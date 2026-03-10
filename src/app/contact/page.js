@@ -185,14 +185,20 @@ export default function Contact() {
 
       {/* MAP SECTION */}
 
-      <section className="h-[450px] w-full">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.655790336142!2d77.42076667500748!3d28.610101285099844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1"
-          className="w-full h-full"
-          loading="lazy"
-          allowFullScreen
-        ></iframe>
-      </section>
+   <section className="py-16 bg-gray-100 text-center">
+  <h2 className="text-3xl font-bold mb-10">
+    Find Us <span className="text-orange-500">On Map</span>
+  </h2>
+
+  <div className="h-[450px] w-full">
+    <iframe
+      src="https://maps.google.com/maps?q=127%20Tilak%20Nagar%20Chhatrapati%20Sambhajinagar%20Aurangabad%20431001&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      className="w-full h-full border-0"
+      loading="lazy"
+      allowFullScreen
+    ></iframe>
+  </div>
+</section>
 
     </div>
   );
