@@ -156,7 +156,7 @@ export default function Contact() {
                 Our Location
               </h4>
               <p className="text-gray-300 mt-2">
-                Greater Noida, West - 201009
+                127, Tilak Nagar, Chhatrapati Sambhajinagar,  Aurangabad 431001
               </p>
             </div>
 
@@ -165,7 +165,7 @@ export default function Contact() {
                 Phone Number
               </h4>
               <p className="text-gray-300 mt-2">
-                +91 9580364089
+                +91 xxxxx xxxxx
               </p>
             </div>
 
@@ -174,7 +174,7 @@ export default function Contact() {
                 Email Address
               </h4>
               <p className="text-gray-300 mt-2">
-                info@savvyr.in
+                info@npinfaraindia.in
               </p>
             </div>
 

@@ -89,7 +89,7 @@ const projects = [
   {
     title: "Mangliyagaon – Kheri Railway Line",
     contractor:
-      "RVNL through Sushee DP Jain Infrastructure & Holistic Technoengineers Ltd",
+      "RVNL through DP Jain Infrastructure & Holistic Technoengineers Ltd",
     participation: "100%",
     startDate: "5-Dec-2024",
     period: "30 Months + 6 Months Defect Liability Period",

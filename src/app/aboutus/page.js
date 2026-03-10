@@ -2,6 +2,35 @@
 
 import { motion } from "framer-motion";
 
+const leaders = [
+  {
+    name: "Founder Name",
+    role: "Managing Director",
+    image: "/images/aboutus/Owner1.jpeg",
+  },
+  {
+    name: "Director Name",
+    role: "Director",
+    image: "/images/aboutus/Owner2.jpeg",
+  },
+  {
+    name: "Director Name",
+    role: "Director",
+    image: "/images/aboutus/Owner3.jpeg",
+  },
+  {
+    name: "Leader Name",
+    role: "Project Head",
+    image: "/images/aboutus/Owner4.jpeg",
+  },
+  {
+    name: "Leader Name",
+    role: "Operations Head",
+    image: "/images/aboutus/Owner5.jpeg",
+  },
+];
+
+
 export default function aboutus() {
   return (
     <div className="bg-white overflow-hidden">
@@ -66,66 +95,59 @@ export default function aboutus() {
       </section>
 
       {/* LEADERSHIP */}
-      <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 bg-white">
-        <div className="max-w-7xl mx-auto text-center">
+      
 
-          <h2 className="text-2xl md:text-3xl font-bold mb-12 md:mb-14">
-            Our <span className="text-orange-500">Leadership</span>
-          </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+ <section className="py-24 px-6 md:px-12 lg:px-20 bg-white">
 
-            <motion.div
-              whileHover={{ y: -10 }}
-              className="bg-white shadow-xl rounded-xl p-6"
-            >
-              <img
-                src="/images/aboutus/Owner1.jpeg"
-                className="w-full h-60 md:h-78 object-fit rounded-lg"
-              />
-              <h3 className="mt-4 text-lg md:text-xl font-semibold">
-                Founder Name
-              </h3>
-              <p className="text-orange-500 text-sm md:text-base">
-                MANAGING DIRECTOR
-              </p>
-            </motion.div>
+  <div className="max-w-7xl mx-auto text-center">
 
-            <motion.div
-              whileHover={{ y: -10 }}
-              className="bg-white shadow-xl rounded-xl p-6"
-            >
-              <img
-                src="/images/aboutus/Owner2.jpeg"
-                className="w-full h-60 md:h-78 object-fit rounded-lg"
-              />
-              <h3 className="mt-4 text-lg md:text-xl font-semibold">
-                Director Name
-              </h3>
-              <p className="text-orange-500 text-sm md:text-base">
-                MANAGING DIRECTOR
-              </p>
-            </motion.div>
+    <h2 className="text-3xl md:text-4xl font-bold mb-16">
+      Our <span className="text-orange-500">Leadership</span>
+    </h2>
 
-            <motion.div
-              whileHover={{ y: -10 }}
-              className="bg-white shadow-xl rounded-xl p-6"
-            >
-              <img
-                src="/images/aboutus/Owner3.jpeg"
-                className="w-full h-60 md:h-78 object-fit rounded-lg"
-              />
-              <h3 className="mt-4 text-lg md:text-xl font-semibold">
-                Director Name
-              </h3>
-              <p className="text-orange-500 text-sm md:text-base">
-                DIRECTOR
-              </p>
-            </motion.div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
+
+      {leaders.map((leader, index) => (
+
+        <motion.div
+          key={index}
+          whileHover={{ y: -8 }}
+          transition={{ duration: 0.3 }}
+          className="group text-center"
+        >
+
+          {/* Image */}
+          <div className="relative overflow-hidden rounded-xl shadow-lg">
+
+            <img
+              src={leader.image}
+              alt={leader.name}
+              className="w-full h-[300px] object-cover group-hover:scale-110 transition duration-500"
+            />
 
           </div>
-        </div>
-      </section>
+
+          {/* Text */}
+          <h3 className="mt-4 text-lg font-semibold">
+            {leader.name}
+          </h3>
+
+          <p className="text-orange-500 text-sm font-medium">
+            {leader.role}
+          </p>
+
+        </motion.div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+
 
       {/* VISION */}
       <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 bg-gray-900 text-white text-center">

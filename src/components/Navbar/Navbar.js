@@ -22,7 +22,7 @@ export default function Navbar() {
         {/* Logo Section */}
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/images/Navbar/excavator.jpg"
+            src="/images/Navbar/Logo.jpeg"
             alt="Excavator Logo"
             width={45}
             height={45}
@@ -48,7 +48,7 @@ export default function Navbar() {
             Projects
           </Link>
           <Link href="/contact" className={linkClass("/contact")}>
-            Contact
+            Contact Us
           </Link>
         </div>
 
@@ -97,7 +97,7 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)}
             className="block hover:text-orange-500"
           >
-            Contact
+            Contact Us
           </Link>
         </div>
       )}
