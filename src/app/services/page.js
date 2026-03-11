@@ -36,7 +36,7 @@ const services = [
   },
   {
     title: "Industrial Infrastructure",
-    img: "/images/OurServices/Service3.png",
+    img: "/images/OurServices/Service7.jpeg",
     desc: "Construction of industrial roads, civil structures, and infrastructure facilities."
   }
 ];
