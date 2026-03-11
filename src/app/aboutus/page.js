@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 
 const leaders = [
   {
-    name: "Founder Name",
-    role: "Managing Director",
+    name: "Shriniwas zavar",
+    role: "Founder & Managing director",
     image: "/images/aboutus/Owner1.jpeg",
   },
   {
@@ -15,24 +15,24 @@ const leaders = [
     role: "Director",
     image: "/images/aboutus/Owner2.jpeg",
   },
+   {
+    name: "Vinodkumar Somani",
+    role: "Finance Director",
+    image: "/images/aboutus/Owner5.jpeg",
+  },
   {
     name: "Somashekaragowda.m",
-    role: "Director",
+    role: "Technical head",
     image: "/images/aboutus/Owner6.jpeg",
   },
   {
     name: "Manjunath Narayan Gaonkar",
-    role: "Project Head",
+    role: "Project Head MP",
     image: "/images/aboutus/Owner4.png",
   },
   {
-    name: "Vinodkumar Somani",
-    role: "Operations Head",
-    image: "/images/aboutus/Owner5.jpeg",
-  },
-  {
-    name: "Rohit",
-    role: "Project manager",
+    name: "Ramesh venkati rathod",
+    role: "Project Head Maharashtra",
     image: "/images/aboutus/Owner7.jpeg",
   },
 ];
@@ -109,12 +109,12 @@ export default function aboutus() {
       {/* LEADERSHIP */}
 
       <section className="py-24 px-6 md:px-10 lg:px-16 bg-white">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className=" mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-16">
             Our <span className="text-orange-500">Leadership</span>
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {leaders.map((leader, index) => (
               <motion.div
                 key={index}
@@ -123,11 +123,11 @@ export default function aboutus() {
                 className="group text-center"
               >
                 {/* Image */}
-                <div className="relative overflow-hidden rounded-full  flex items-center justify-center">
+                <div className="relative overflow-hidden rounded-xl shadow-lg">
                   <img
                     src={leader.image}
                     alt={leader.name}
-                    className="w-[300px] h-[300px] object-fill  transition duration-500 rounded-full shadow-lg"
+                    className="w-full h-[280px] object-fit group-hover:scale-110 transition duration-500"
                   />
                 </div>
 
