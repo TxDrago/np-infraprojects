@@ -366,7 +366,7 @@ function GetInTouch() {
             <div>
               <h5 className="text-orange-500 font-semibold">Email</h5>
               <p className="text-gray-300">
-                info@npinfaraindia.in
+                info@npinfaraindia.com
               </p>
             </div>
           </div>

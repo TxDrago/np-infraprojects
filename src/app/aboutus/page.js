@@ -11,7 +11,7 @@ const leaders = [
     image: "/images/aboutus/Owner1.jpeg",
   },
   {
-    name: "Director Name",
+    name: "Smita Shriniwas zavar",
     role: "Director",
     image: "/images/aboutus/Owner2.jpeg",
   },
@@ -30,23 +30,25 @@ const leaders = [
     role: "Operations Head",
     image: "/images/aboutus/Owner5.jpeg",
   },
+  {
+    name: "Rohit",
+    role: "Project manager",
+    image: "/images/aboutus/Owner7.jpeg",
+  },
 ];
 
-
 export default function aboutus() {
+  const pathname = usePathname();
 
-   const pathname = usePathname(); 
-  
-    const linkClass = (path) =>
-      `transition ${
-        pathname === path
-          ? "text-orange-500 font-semibold border-b-2 border-orange-500"
-          : "hover:text-orange-500"
-      }`;
+  const linkClass = (path) =>
+    `transition ${
+      pathname === path
+        ? "text-orange-500 font-semibold border-b-2 border-orange-500"
+        : "hover:text-orange-500"
+    }`;
 
   return (
     <div className="bg-white overflow-hidden">
-
       {/* HERO */}
       <section
         className="relative h-[350px] md:h-[450px] lg:h-[550px] flex items-center justify-center text-white bg-cover bg-center"
@@ -71,7 +73,6 @@ export default function aboutus() {
       {/* ABOUT COMPANY */}
       <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 bg-gray-100">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-14 items-center">
-
           <motion.img
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -91,8 +92,8 @@ export default function aboutus() {
 
             <p className="text-gray-600 leading-relaxed text-sm md:text-base">
               Our company specializes in infrastructure development,
-              construction management, and engineering excellence. With years
-              of experience in delivering high-quality projects, we focus on
+              construction management, and engineering excellence. With years of
+              experience in delivering high-quality projects, we focus on
               innovation, sustainability, and client satisfaction.
             </p>
 
@@ -102,68 +103,48 @@ export default function aboutus() {
               standards.
             </p>
           </motion.div>
-
         </div>
       </section>
 
       {/* LEADERSHIP */}
-      
 
+      <section className="py-24 px-6 md:px-10 lg:px-16 bg-white">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-16">
+            Our <span className="text-orange-500">Leadership</span>
+          </h2>
 
- <section className="py-24 px-6 md:px-12 lg:px-20 bg-white">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-12">
+            {leaders.map((leader, index) => (
+              <motion.div
+                key={index}
+                whileHover={{ y: -8 }}
+                transition={{ duration: 0.3 }}
+                className="group text-center"
+              >
+                {/* Image */}
+                <div className="relative overflow-hidden rounded-full  flex items-center justify-center">
+                  <img
+                    src={leader.image}
+                    alt={leader.name}
+                    className="w-[300px] h-[300px] object-fill  transition duration-500 rounded-full shadow-lg"
+                  />
+                </div>
 
-  <div className="max-w-7xl mx-auto text-center">
+                {/* Text */}
+                <h3 className="mt-4 text-lg font-semibold">{leader.name}</h3>
 
-    <h2 className="text-3xl md:text-4xl font-bold mb-16">
-      Our <span className="text-orange-500">Leadership</span>
-    </h2>
-
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12">
-
-      {leaders.map((leader, index) => (
-
-        <motion.div
-          key={index}
-          whileHover={{ y: -8 }}
-          transition={{ duration: 0.3 }}
-          className="group text-center"
-        >
-
-          {/* Image */}
-          <div className="relative overflow-hidden rounded-xl shadow-lg">
-
-            <img
-              src={leader.image}
-              alt={leader.name}
-              className="w-full h-[300px] object-cover group-hover:scale-110 transition duration-500"
-            />
-
+                <p className="text-orange-500 text-sm font-medium">
+                  {leader.role}
+                </p>
+              </motion.div>
+            ))}
           </div>
-
-          {/* Text */}
-          <h3 className="mt-4 text-lg font-semibold">
-            {leader.name}
-          </h3>
-
-          <p className="text-orange-500 text-sm font-medium">
-            {leader.role}
-          </p>
-
-        </motion.div>
-
-      ))}
-
-    </div>
-
-  </div>
-
-</section>
-
-
+        </div>
+      </section>
 
       {/* VISION */}
       <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 bg-gray-900 text-white text-center">
-
         <h2 className="text-2xl md:text-3xl font-bold mb-6">
           Our <span className="text-orange-500">Vision</span>
         </h2>
@@ -173,20 +154,16 @@ export default function aboutus() {
           innovative, sustainable, and high-quality projects that positively
           impact communities and industries.
         </p>
-
       </section>
 
       {/* MISSION */}
       <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 bg-gray-100">
-
         <div className="max-w-7xl mx-auto text-center">
-
           <h2 className="text-2xl md:text-3xl font-bold mb-12 md:mb-14">
             Our <span className="text-orange-500">Mission</span>
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
             <div className="bg-white p-8 rounded-xl shadow-md">
               <h3 className="font-semibold mb-2">Quality</h3>
               <p className="text-gray-600 text-sm">
@@ -214,25 +191,22 @@ export default function aboutus() {
                 Build environmentally responsible infrastructure.
               </p>
             </div>
-
           </div>
-
         </div>
       </section>
 
       {/* CTA */}
       <section className="py-16 md:py-20 text-center bg-white px-6">
-
         <h2 className="text-2xl md:text-3xl font-bold mb-6">
-          Let's Build The <span className="text-orange-500">Future</span> Together
+          Let's Build The <span className="text-orange-500">Future</span>{" "}
+          Together
         </h2>
-<Link href="/contact" className={linkClass("/contact")}>
-        <button className="bg-orange-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-orange-700 transition">
-          Contact Us
-        </button>
-          </Link>
+        <Link href="/contact" className={linkClass("/contact")}>
+          <button className="bg-orange-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-orange-700 transition">
+            Contact Us
+          </button>
+        </Link>
       </section>
-
     </div>
   );
 }

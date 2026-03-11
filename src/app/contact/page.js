@@ -174,7 +174,7 @@ export default function Contact() {
                 Email Address
               </h4>
               <p className="text-gray-300 mt-2">
-                info@npinfaraindia.in
+                info@npinfaraindia.com
               </p>
             </div>
 
