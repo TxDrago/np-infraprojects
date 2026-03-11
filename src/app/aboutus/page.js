@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const leaders = [
   {
@@ -32,6 +34,16 @@ const leaders = [
 
 
 export default function aboutus() {
+
+   const pathname = usePathname(); 
+  
+    const linkClass = (path) =>
+      `transition ${
+        pathname === path
+          ? "text-orange-500 font-semibold border-b-2 border-orange-500"
+          : "hover:text-orange-500"
+      }`;
+
   return (
     <div className="bg-white overflow-hidden">
 
@@ -214,11 +226,11 @@ export default function aboutus() {
         <h2 className="text-2xl md:text-3xl font-bold mb-6">
           Let's Build The <span className="text-orange-500">Future</span> Together
         </h2>
-
+<Link href="/contact" className={linkClass("/contact")}>
         <button className="bg-orange-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-orange-700 transition">
           Contact Us
         </button>
-
+          </Link>
       </section>
 
     </div>

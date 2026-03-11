@@ -352,21 +352,21 @@ function GetInTouch() {
             <div>
               <h5 className="text-orange-500 font-semibold">Location</h5>
               <p className="text-gray-300">
-                Greater Noida, West - 201009
+                127, Tilak Nagar, Chhatrapati Sambhajinagar,  Aurangabad 431001
               </p>
             </div>
 
             <div>
               <h5 className="text-orange-500 font-semibold">Phone</h5>
               <p className="text-gray-300">
-                +91 9580364089
+              +91 94059 11203
               </p>
             </div>
 
             <div>
               <h5 className="text-orange-500 font-semibold">Email</h5>
               <p className="text-gray-300">
-                info@savvyr.in
+                info@npinfaraindia.in
               </p>
             </div>
           </div>

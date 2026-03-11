@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="bg-gray-950 text-white relative pt-16 pb-10 px-6 md:px-16">
       
       {/* Top Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15">
 
         {/* About Us */}
         <div>
@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
 
         {/* Company */}
-        <div>
+        {/* <div>
           <h3 className="text-2xl font-semibold mb-6 relative inline-block">
             Company
             <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-orange-500"></span>
@@ -57,7 +57,7 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Services */}
         <div>
@@ -66,16 +66,16 @@ export default function Footer() {
             <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-orange-500"></span>
           </h3>
           <ul className="space-y-3 text-gray-300">
-            <li className="hover:text-orange-500 transition cursor-pointer">
+            <li className="hover:text-orange-500 transition ">
               Railway Line Construction
             </li>
-            <li className="hover:text-orange-500 transition cursor-pointer">
+            <li className="hover:text-orange-500 transition ">
               Track Laying & Maintenance
             </li>
-            <li className="hover:text-orange-500 transition cursor-pointer">
+            <li className="hover:text-orange-500 transition ">
               Highway & Road Development
             </li>
-            <li className="hover:text-orange-500 transition cursor-pointer">
+            <li className="hover:text-orange-500 transition ">
               Infrastructure Projects
             </li>
           </ul>

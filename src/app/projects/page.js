@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },
@@ -106,6 +108,15 @@ export default function Projects() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+    const pathname = usePathname(); 
+  
+    const linkClass = (path) =>
+      `transition ${
+        pathname === path
+          ? "text-orange-500 font-semibold border-b-2 border-orange-500"
+          : "hover:text-orange-500"
+      }`;
+
   return (
     <div>
       {/* HERO */}
@@ -199,12 +210,11 @@ export default function Projects() {
           Let's build world-class infrastructure together.
         </p>
 
-        <a
-          href="/contact"
-          className="bg-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-orange-500 transition"
-        >
+       <Link href="/contact" className={linkClass("/contact")}>
+        <button className="bg-orange-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-orange-700 transition">
           Contact Us
-        </a>
+        </button>
+          </Link>
       </section>
     </div>
   );

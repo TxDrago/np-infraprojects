@@ -165,7 +165,7 @@ export default function Contact() {
                 Phone Number
               </h4>
               <p className="text-gray-300 mt-2">
-                +91 xxxxx xxxxx
+                +91 94059 11203
               </p>
             </div>
 
