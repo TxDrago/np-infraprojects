@@ -17,12 +17,12 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-[1000] bg-black/20 backdrop-blur-lg shadow-lg text-white">
+    <nav className="fixed top-0 left-0 w-full z-[1000] bg-black/10 backdrop-blur-lg shadow-lg text-white">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo Section */}
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/images/Navbar/Logo.jpeg"
+            src="/images/Navbar/logo2.png"
             alt="Excavator Logo"
             width={45}
             height={45}

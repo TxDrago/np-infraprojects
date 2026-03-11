@@ -12,9 +12,9 @@ export const metadata = {
     "Road and Railway Line Construction Company specializing in highways, track laying and infrastructure development.",
 
   icons: {
-    icon: "/images/Navbar/Logo.jpeg", 
-    shortcut: "/images/Navbar/Logo.jpeg",
-    apple: "/images/Navbar/Logo.jpeg",
+    icon: "/images/Navbar/logo2.png", 
+    shortcut: "/images/Navbar/logo2.png",
+    apple: "/images/Navbar/logo2.png",
   },
 };
 

@@ -77,7 +77,7 @@ export default function aboutus() {
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            src="/images/aboutus/OurCompany.png"
+            src="/images/aboutus/OurCo.jpeg"
             className="rounded-xl shadow-lg w-full"
           />
 

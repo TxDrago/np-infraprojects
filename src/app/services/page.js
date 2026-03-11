@@ -21,17 +21,17 @@ const services = [
   },
   {
     title: "Earthwork & Excavation",
-    img: "/images/OurServices/Service3.png",
+    img: "/images/OurServices/Service6.jpeg",
     desc: "Heavy earthwork, soil cutting, grading, and excavation using modern machinery and equipment."
   },
   {
     title: "Bridge Construction",
-    img: "/images/OurServices/Service3.png",
+    img: "/images/OurServices/Service5.jpeg",
     desc: "Construction of major and minor bridges for railway and highway infrastructure."
   },
   {
     title: "Tunnel Construction",
-    img: "/images/OurServices/Service3.png",
+    img: "/images/OurServices/hero4.jpeg",
     desc: "Execution of tunnel excavation, lining, and structural works for railway and infrastructure projects."
   },
   {
