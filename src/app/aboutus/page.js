@@ -7,17 +7,17 @@ import { usePathname } from "next/navigation";
 const leaders = [
   {
     name: "Shriniwas zavar",
-    role: "Founder & Managing director",
+    role: "Founder & Director",
     image: "/images/aboutus/Owner1.jpeg",
   },
   {
     name: "Smita Shriniwas zavar",
-    role: "Director",
+    role: "Chairman & Managing director",
     image: "/images/aboutus/Owner2.jpeg",
   },
    {
     name: "Vinodkumar Somani",
-    role: "Finance Director",
+    role: "Director",
     image: "/images/aboutus/Owner5.jpeg",
   },
   {

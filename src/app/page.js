@@ -87,22 +87,41 @@ function AboutExpertise() {
           variants={fadeUp}
         >
           <h2 className="text-3xl font-bold mb-6">
-            About <span className="text-orange-500">N.P. Infra projects India Pvt. Ltd.</span>
+            About <span className="text-orange-500">NP Infra projects India Pvt. Ltd.</span>
           </h2>
           <p className="text-gray-600 leading-relaxed mb-6">
-            We specialize in railway line construction, track laying,
-            highway development and major infrastructure projects across India.
+           We specialize in the execution of railway, road, and irrigation projects, along with a wide range of integrated infrastructure development works across India. Backed by strong technical expertise and modern construction capabilities, we deliver high-quality engineering solutions that support nation-building and sustainable infrastructure growth.
           </p>
 
           <h3 className="text-xl font-semibold mb-3 text-orange-500">
             Our Expertise
           </h3>
-          <ul className="space-y-2 text-gray-700">
-            <li>✔ Railway Track Construction</li>
-            <li>✔ Heavy Earthwork & Excavation</li>
-            <li>✔ Civil & Structural Engineering</li>
-            <li>✔ Large Scale Infrastructure Projects</li>
-          </ul>
+         <ul className="space-y-3 text-gray-700 text-lg">
+  <li className="flex items-start gap-2">
+    <span className="text-orange-500">✔</span>
+    Building India’s Railways and Infrastructure for the Future
+  </li>
+
+  <li className="flex items-start gap-2">
+    <span className="text-orange-500">✔</span>
+    Nation Building through Railways and Infrastructure Development
+  </li>
+
+  <li className="flex items-start gap-2">
+    <span className="text-orange-500">✔</span>
+    Transforming India through Railway and Infrastructure Construction
+  </li>
+
+  <li className="flex items-start gap-2">
+    <span className="text-orange-500">✔</span>
+    Driving India’s Growth through Railway and Infrastructure Excellence
+  </li>
+
+  <li className="flex items-start gap-2">
+    <span className="text-orange-500">✔</span>
+    Engineering India’s Future through Railway & Infrastructure Development
+  </li>
+</ul>
         </motion.div>
 
         <motion.div
