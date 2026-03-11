@@ -87,7 +87,7 @@ function AboutExpertise() {
           variants={fadeUp}
         >
           <h2 className="text-3xl font-bold mb-6">
-            About <span className="text-orange-500">N.P. Infraprojects</span>
+            About <span className="text-orange-500">N.P. Infra projects India Pvt. Ltd.</span>
           </h2>
           <p className="text-gray-600 leading-relaxed mb-6">
             We specialize in railway line construction, track laying,
