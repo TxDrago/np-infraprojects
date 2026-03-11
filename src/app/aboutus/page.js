@@ -37,6 +37,11 @@ const leaders = [
   },
 ];
 
+const founder = leaders[0];
+const chairman = leaders[1];
+const director = leaders[2];
+const managers = leaders.slice(3);
+
 export default function aboutus() {
   const pathname = usePathname();
 
@@ -126,39 +131,33 @@ export default function aboutus() {
       {/* LEADERSHIP */}
 
       <section className="py-24 px-6 md:px-10 lg:px-16 bg-white">
-        <div className=" mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-16">
-            Our <span className="text-orange-500">Leadership</span>
-          </h2>
+  <div className="max-w-7xl mx-auto text-center">
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {leaders.map((leader, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ y: -8 }}
-                transition={{ duration: 0.3 }}
-                className="group text-center"
-              >
-                {/* Image */}
-                <div className="relative overflow-hidden rounded-xl shadow-lg">
-                  <img
-                    src={leader.image}
-                    alt={leader.name}
-                    className="w-full h-[280px] object-fit group-hover:scale-110 transition duration-500"
-                  />
-                </div>
+    <h2 className="text-3xl md:text-4xl font-bold mb-20">
+      Our <span className="text-orange-500">Leadership</span>
+    </h2>
 
-                {/* Text */}
-                <h3 className="mt-4 text-lg font-semibold">{leader.name}</h3>
+    {/* Founder */}
+    <div className="flex justify-center mb-16">
+      <LeaderCard leader={leaders[0]} />
+    </div>
 
-                <p className="text-orange-500 text-sm font-medium">
-                  {leader.role}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+    {/* Chairman + Director */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-items-center mb-16">
+      <LeaderCard leader={leaders[1]} />
+      <LeaderCard leader={leaders[2]} />
+    </div>
+
+    {/* Managers */}
+    {/* Managers */}
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
+  {leaders.slice(3).map((leader, index) => (
+    <LeaderCard key={index} leader={leader} />
+  ))}
+</div>
+
+  </div>
+</section>
 
       {/* VISION */}
       <section className="py-16 md:py-20 px-6 md:px-12 lg:px-20 bg-gray-900 text-white text-center">
@@ -226,5 +225,29 @@ export default function aboutus() {
         </Link>
       </section>
     </div>
+  );
+}
+
+function LeaderCard({ leader }) {
+  return (
+    <motion.div
+      whileHover={{ y: -8 }}
+      transition={{ duration: 0.3 }}
+      className="group text-center max-w-[220px]"
+    >
+      <div className="relative overflow-hidden rounded-xl shadow-lg">
+        <img
+          src={leader.image}
+          alt={leader.name}
+          className="w-full h-[260px] object-cover group-hover:scale-110 transition duration-500"
+        />
+      </div>
+
+      <h3 className="mt-4 text-lg font-semibold">{leader.name}</h3>
+
+      <p className="text-orange-500 text-sm font-medium">
+        {leader.role}
+      </p>
+    </motion.div>
   );
 }
