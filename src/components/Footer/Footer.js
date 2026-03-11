@@ -17,7 +17,7 @@ export default function Footer() {
             <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-orange-500"></span>
           </h3>
           <p className="text-gray-300 leading-relaxed"> 
-            N.P. Infraprojects India Pvt. Ltd. is a trusted name in railway 
+            NP Infraprojects India Pvt. Ltd. is a trusted name in railway 
             line construction, highway development, and large-scale 
             infrastructure projects across India. We focus on quality, 
             safety, and long-term sustainability.
@@ -67,13 +67,22 @@ export default function Footer() {
           </h3>
           <ul className="space-y-3 text-gray-300">
             <li className="hover:text-orange-500 transition ">
+              Highway & Road Development
+            </li>
+            <li className="hover:text-orange-500 transition ">
               Railway Line Construction
             </li>
             <li className="hover:text-orange-500 transition ">
-              Track Laying & Maintenance
+              Earthwork & Excavation
             </li>
             <li className="hover:text-orange-500 transition ">
-              Highway & Road Development
+             Bridge Construction
+            </li>
+              <li className="hover:text-orange-500 transition ">
+             Tunnel Construction
+            </li>
+            <li className="hover:text-orange-500 transition ">
+              Track Laying & Maintenance
             </li>
             <li className="hover:text-orange-500 transition ">
               Infrastructure Projects
@@ -122,7 +131,7 @@ export default function Footer() {
 
       {/* Bottom Section */}
       <div className="border-t border-gray-800 mt-12 pt-6 text-center text-gray-400 text-sm">
-        © {new Date().getFullYear()} N.P. Infraprojects India Pvt. Ltd. All Rights Reserved.
+        © {new Date().getFullYear()} NP Infraprojects India Pvt. Ltd. All Rights Reserved.
       </div>
     </footer>
   );

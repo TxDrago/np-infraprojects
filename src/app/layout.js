@@ -7,7 +7,7 @@ import Footer from "@/components/Footer/Footer.js";
 
 
 export const metadata = {
-  title: "N.P. Infraprojects India Pvt. Ltd.",
+  title: "NP Infraprojects India Pvt. Ltd.",
   description:
     "Road and Railway Line Construction Company specializing in highways, track laying and infrastructure development.",
 

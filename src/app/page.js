@@ -13,10 +13,8 @@ const fadeUp = {
 
 // -------------------------- Home page -------------------------- //
 export default function Home() {
-
   return (
     <main className="bg-white overflow-hidden">
-
       <HeroCarousel />
       <AboutExpertise />
       <SectorOperations />
@@ -26,13 +24,12 @@ export default function Home() {
       {/* <Awards /> */}
       {/* <div className="w-full h-1 bg-red-600"></div> */}
       <GetInTouch />
-
     </main>
   );
 }
 
-  // -------------------------- Hero Carousel -------------------------- //
-  function HeroCarousel() {
+// -------------------------- Hero Carousel -------------------------- //
+function HeroCarousel() {
   const slides = [
     "/images/hero/hero1.jpeg",
     "/images/hero/hero2.jpg",
@@ -57,13 +54,9 @@ export default function Home() {
         className="object-cover transition-all duration-700"
       />
       <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-center text-white px-6">
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={fadeUp}
-        >
+        <motion.div initial="hidden" animate="visible" variants={fadeUp}>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Building India's Railway & Infrastructure Future
+            Strengthening India’s Infrastructure: Railways, Transport & Beyond
           </h1>
           <p className="text-lg md:text-xl text-gray-200">
             Precision • Strength • Reliability
@@ -79,7 +72,6 @@ function AboutExpertise() {
   return (
     <section className="py-20 px-6 md:px-16 bg-gray-50">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -87,41 +79,51 @@ function AboutExpertise() {
           variants={fadeUp}
         >
           <h2 className="text-3xl font-bold mb-6">
-            About <span className="text-orange-500">NP Infra projects India Pvt. Ltd.</span>
+            About{" "}
+            <span className="text-orange-500">
+              NP Infra projects India Pvt. Ltd.
+            </span>
           </h2>
           <p className="text-gray-600 leading-relaxed mb-6">
-           We specialize in the execution of railway, road, and irrigation projects, along with a wide range of integrated infrastructure development works across India. Backed by strong technical expertise and modern construction capabilities, we deliver high-quality engineering solutions that support nation-building and sustainable infrastructure growth.
+            We specialize in the execution of railway, road, and irrigation
+            projects, along with a wide range of integrated infrastructure
+            development works across India. Backed by strong technical expertise
+            and modern construction capabilities, we deliver high-quality
+            engineering solutions that support nation-building and sustainable
+            infrastructure growth.
           </p>
 
           <h3 className="text-xl font-semibold mb-3 text-orange-500">
             Our Expertise
           </h3>
-         <ul className="space-y-3 text-gray-700 text-lg">
-  <li className="flex items-start gap-2">
-    <span className="text-orange-500">✔</span>
-    Building India’s Railways and Infrastructure for the Future
-  </li>
+          <ul className="space-y-3 text-gray-700 text-lg">
+            <li className="flex items-start gap-2">
+              <span className="text-orange-500">✔</span>
+              Building India’s Railways and Infrastructure for the Future
+            </li>
 
-  <li className="flex items-start gap-2">
-    <span className="text-orange-500">✔</span>
-    Nation Building through Railways and Infrastructure Development
-  </li>
+            <li className="flex items-start gap-2">
+              <span className="text-orange-500">✔</span>
+              Nation Building through Railways and Infrastructure Development
+            </li>
 
-  <li className="flex items-start gap-2">
-    <span className="text-orange-500">✔</span>
-    Transforming India through Railway and Infrastructure Construction
-  </li>
+            <li className="flex items-start gap-2">
+              <span className="text-orange-500">✔</span>
+              Transforming India through Railway and Infrastructure Construction
+            </li>
 
-  <li className="flex items-start gap-2">
-    <span className="text-orange-500">✔</span>
-    Driving India’s Growth through Railway and Infrastructure Excellence
-  </li>
+            <li className="flex items-start gap-2">
+              <span className="text-orange-500">✔</span>
+              Driving India’s Growth through Railway and Infrastructure
+              Excellence
+            </li>
 
-  <li className="flex items-start gap-2">
-    <span className="text-orange-500">✔</span>
-    Engineering India’s Future through Railway & Infrastructure Development
-  </li>
-</ul>
+            <li className="flex items-start gap-2">
+              <span className="text-orange-500">✔</span>
+              Engineering India’s Future through Railway & Infrastructure
+              Development
+            </li>
+          </ul>
         </motion.div>
 
         <motion.div
@@ -143,14 +145,14 @@ function AboutExpertise() {
   );
 }
 
-// -------------------------- Sector of Operation -------------------------- //
+// -------------------------- Our Core Business Areas -------------------------- //
 
 function SectorOperations() {
   const sectors = [
-    "Railway Infrastructure",
     "Highway Construction",
-    "Urban Development",
-    "Industrial Projects",
+    "Railway Infrastructure",
+    "Irrigation Projects",
+    "Building Construction",
   ];
 
   return (
@@ -163,7 +165,7 @@ function SectorOperations() {
           variants={fadeUp}
           className="text-3xl font-bold mb-12"
         >
-          Sector of Operation
+          Our Core Business Areas
         </motion.h2>
 
         <div className="grid md:grid-cols-4 gap-8">
@@ -185,7 +187,6 @@ function SectorOperations() {
   );
 }
 
-
 // -------------------------- Core Competencies -------------------------- //
 function CoreCompetencies() {
   return (
@@ -205,6 +206,8 @@ function CoreCompetencies() {
           "Advanced Engineering Techniques",
           "On-Time Project Delivery",
           "High Safety Standards",
+          "Quality Assurance & Compliance",
+          "Efficient Resource & Project Management",
         ].map((item, i) => (
           <div
             key={i}
@@ -222,12 +225,10 @@ function CoreCompetencies() {
 function ProjectCounter() {
   return (
     <section className="py-20 bg-orange-600 text-white text-center">
-      <h2 className="text-3xl font-bold mb-12">
-        Our Achievements
-      </h2>
+      <h2 className="text-3xl font-bold mb-12">Our Achievements</h2>
 
       <div className="grid md:grid-cols-4 gap-10">
-        <Stat number="20+" label="Projects Completed" />
+        <Stat number="50+" label="Projects Completed" />
         <Stat number="20+" label="Years Experience" />
         <Stat number="500+" label="Skilled Workforce" />
         <Stat number="3" label="States Covered" />
@@ -250,19 +251,16 @@ function Stat({ number, label }) {
 function Visionaries() {
   return (
     <section className="py-20 px-6 md:px-16 bg-gray-100 text-center">
-      <h2 className="text-3xl font-bold mb-12">
-        Recognized by Visionaries
-      </h2>
+      <h2 className="text-3xl font-bold mb-12">Recognized by Visionaries</h2>
 
       <p className="max-w-3xl mx-auto text-gray-600">
-        Our company has been acknowledged by industry leaders,
-        railway authorities and infrastructure experts for delivering
-        large-scale high-quality projects across India.
+        Our company has been acknowledged by industry leaders, railway
+        authorities and infrastructure experts for delivering large-scale
+        high-quality projects across India.
       </p>
     </section>
   );
 }
-
 
 // -------------------------- Awards & Appreciations -------------------------- //
 // function Awards() {
@@ -287,10 +285,9 @@ function Visionaries() {
 //   );
 // }
 
-
 //--------------------------- Get In Touch Section -------------------------- //
 function GetInTouch() {
- const formRef = useRef(null);
+  const formRef = useRef(null);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -299,8 +296,7 @@ function GetInTouch() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const emailRegex =
-      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if (!emailRegex.test(email) || name.trim() === "") {
       alert("Please enter valid Name and Email");
@@ -329,7 +325,7 @@ function GetInTouch() {
           "service_egxeldj",
           "template_ysw7f37",
           formRef.current,
-          "sCeBvf_xHkwUmN77f"
+          "sCeBvf_xHkwUmN77f",
         );
       }
 
@@ -346,7 +342,6 @@ function GetInTouch() {
   return (
     <section className="bg-gray-900 text-white py-24 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
-
         {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -354,9 +349,7 @@ function GetInTouch() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h4 className="text-orange-500 font-semibold mb-2">
-            Contact Us
-          </h4>
+          <h4 className="text-orange-500 font-semibold mb-2">Contact Us</h4>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Get In Touch With Us
@@ -364,29 +357,26 @@ function GetInTouch() {
 
           <p className="text-gray-300 mb-10">
             We are ready to deliver excellence in railway and infrastructure
-            projects. Reach out to us for collaboration, quotations, or project discussions.
+            projects. Reach out to us for collaboration, quotations, or project
+            discussions.
           </p>
 
           <div className="space-y-6">
             <div>
               <h5 className="text-orange-500 font-semibold">Location</h5>
               <p className="text-gray-300">
-                127, Tilak Nagar, Chhatrapati Sambhajinagar,  Aurangabad 431001
+                127, Tilak Nagar, Chhatrapati Sambhajinagar, Aurangabad 431001
               </p>
             </div>
 
             <div>
               <h5 className="text-orange-500 font-semibold">Phone</h5>
-              <p className="text-gray-300">
-              +91 94059 11203
-              </p>
+              <p className="text-gray-300">+91 94059 11203</p>
             </div>
 
             <div>
               <h5 className="text-orange-500 font-semibold">Email</h5>
-              <p className="text-gray-300">
-                info@npinfaraindia.com
-              </p>
+              <p className="text-gray-300">info@npinfaraindia.com</p>
             </div>
           </div>
         </motion.div>
@@ -442,5 +432,3 @@ function GetInTouch() {
     </section>
   );
 }
-
-

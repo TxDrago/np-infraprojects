@@ -10,15 +10,16 @@ const fadeUp = {
 
 const services = [
   {
-    title: "Railway Construction",
-    img: "/images/OurServices/Service3.png",
-    desc: "Construction of railway lines, track laying, ballastless tracks, bridges and railway infrastructure projects."
-  },
-  {
     title: "Highway & Road Construction",
     img: "/images/OurServices/Service4.png",
     desc: "Execution of highway, national highway, and industrial road construction projects across India."
   },
+  {
+    title: "Railway Construction",
+    img: "/images/OurServices/Service3.png",
+    desc: "Construction of railway lines, track laying, ballastless tracks, bridges and railway infrastructure projects."
+  },
+  
   {
     title: "Earthwork & Excavation",
     img: "/images/OurServices/Service6.jpeg",
@@ -117,7 +118,7 @@ export default function Services() {
           <div className="grid md:grid-cols-4 gap-10">
 
             <div>
-              <h3 className="text-3xl font-bold text-orange-500">20+</h3>
+              <h3 className="text-3xl font-bold text-orange-500">50+</h3>
               <p>Years Experience</p>
             </div>
 

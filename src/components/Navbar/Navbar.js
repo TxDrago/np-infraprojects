@@ -17,7 +17,7 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-[1000] bg-black/10 backdrop-blur-lg shadow-lg text-white">
+    <nav className="fixed top-0 left-0 w-full z-[1000] bg-gradient-to-b from-gray-900 via-gray-900/90 to-transparent  text-white">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo Section */}
         <Link href="/" className="flex items-center gap-3">

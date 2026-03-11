@@ -15,7 +15,7 @@ const leaders = [
     role: "Chairman & Managing director",
     image: "/images/aboutus/Owner2.jpeg",
   },
-   {
+  {
     name: "Vinodkumar Somani",
     role: "Director",
     image: "/images/aboutus/Owner5.jpeg",
@@ -91,16 +91,33 @@ export default function aboutus() {
             </h2>
 
             <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-              Our company specializes in infrastructure development,
-              construction management, and engineering excellence. With years of
-              experience in delivering high-quality projects, we focus on
-              innovation, sustainability, and client satisfaction.
+              We are a forward-thinking infrastructure company committed to
+              delivering high-quality development and construction solutions.
+              Our expertise spans infrastructure development, construction
+              management, and advanced engineering practices, enabling us to
+              execute projects with precision and reliability.
+            </p>
+
+            <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+              With a strong foundation built on experience, innovation, and
+              technical excellence, we focus on creating sustainable and
+              efficient infrastructure that meets the evolving needs of modern
+              communities and industries.
+            </p>
+
+            <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+              Our team of skilled engineers, project managers, and industry
+              professionals works collaboratively to ensure every project is
+              delivered with the highest standards of quality, safety, and
+              efficiency. By combining modern engineering techniques with a
+              client-centric approach, we consistently deliver projects that
+              exceed expectations and create long-term value.
             </p>
 
             <p className="text-gray-600 mt-4 text-sm md:text-base">
-              Our team of experienced professionals ensures every project is
-              executed with precision, efficiency, and the highest industry
-              standards.
+              At the heart of our operations is a commitment to integrity,
+              timely delivery, and building lasting relationships with our
+              clients and partners.
             </p>
           </motion.div>
         </div>
@@ -150,9 +167,10 @@ export default function aboutus() {
         </h2>
 
         <p className="max-w-3xl mx-auto text-gray-300 text-sm md:text-lg">
-          To become a globally recognized infrastructure company delivering
-          innovative, sustainable, and high-quality projects that positively
-          impact communities and industries.
+          To become a trusted leader in India’s infrastructure sector by
+          delivering innovative, sustainable, and high-quality projects that
+          contribute to the nation’s growth and strengthen the development of
+          communities, industries, and public infrastructure.
         </p>
       </section>
 
