@@ -16,17 +16,17 @@ const leaders = [
     image: "/images/aboutus/Owner2.jpeg",
   },
   {
-    name: "Director Name",
+    name: "Somashekaragowda.m",
     role: "Director",
-    image: "/images/aboutus/Owner3.jpeg",
+    image: "/images/aboutus/Owner6.jpeg",
   },
   {
-    name: "Leader Name",
+    name: "Manjunath Narayan Gaonkar",
     role: "Project Head",
-    image: "/images/aboutus/Owner4.jpeg",
+    image: "/images/aboutus/Owner4.png",
   },
   {
-    name: "Leader Name",
+    name: "Vinodkumar Somani",
     role: "Operations Head",
     image: "/images/aboutus/Owner5.jpeg",
   },
