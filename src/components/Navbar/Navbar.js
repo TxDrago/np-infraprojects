@@ -17,7 +17,7 @@ export default function Navbar() {
     }`;
 
   return (
-    <nav className="bg-gray-900 text-white sticky top-0 z-50 shadow-lg">
+    <nav className="fixed top-0 left-0 w-full z-[1000] bg-black/20 backdrop-blur-lg shadow-lg text-white">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo Section */}
         <Link href="/" className="flex items-center gap-3">
@@ -29,7 +29,7 @@ export default function Navbar() {
             className="object-contain"
           />
           <span className="text-xl font-bold">
-            N.P. <span className="text-orange-500">InfraProjectsIndia</span>
+            N.P. <span className="text-orange-500">Infra Projects India pvt. Ltd.</span>
           </span>
         </Link>
 

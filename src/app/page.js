@@ -36,7 +36,7 @@ export default function Home() {
   const slides = [
     "/images/hero/hero1.jpeg",
     "/images/hero/hero2.jpg",
-    "/images/hero/hero3.jpeg",
+    "/images/hero/hero4.jpeg",
   ];
 
   const [index, setIndex] = useState(0);
@@ -49,7 +49,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative h-[90vh] w-full">
+    <div className="relative h-[100vh] w-full">
       <Image
         src={slides[index]}
         alt="Hero"
