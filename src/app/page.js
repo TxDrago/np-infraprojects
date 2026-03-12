@@ -81,7 +81,7 @@ function AboutExpertise() {
           <h2 className="text-3xl font-bold mb-6">
             About{" "}
             <span className="text-orange-500">
-              NP Infra projects India Pvt. Ltd.
+              NP InfraProjects India Pvt. Ltd.
             </span>
           </h2>
           <p className="text-gray-600 leading-relaxed mb-6">

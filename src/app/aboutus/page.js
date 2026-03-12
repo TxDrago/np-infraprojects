@@ -23,12 +23,12 @@ const leaders = [
   {
     name: "Somashekaragowda.m",
     role: "Technical head",
-    image: "/images/aboutus/Owner6.jpeg",
+    image: "/images/aboutus/Owner9.jpeg",
   },
   {
     name: "Manjunath Narayan Gaonkar",
     role: "Project Head MP",
-    image: "/images/aboutus/Owner4.png",
+    image: "/images/aboutus/Owner8.jpeg",
   },
   {
     name: "Ramesh venkati rathod",
