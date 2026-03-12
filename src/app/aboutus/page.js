@@ -6,12 +6,12 @@ import { usePathname } from "next/navigation";
 
 const leaders = [
   {
-    name: "Shriniwas zavar",
+    name: "Shriniwas Zavar",
     role: "Founder & Director",
     image: "/images/aboutus/Owner1.jpeg",
   },
   {
-    name: "Smita Shriniwas zavar",
+    name: "Smita Shriniwas Zavar",
     role: "Chairman & Managing director",
     image: "/images/aboutus/Owner2.jpeg",
   },
@@ -21,7 +21,7 @@ const leaders = [
     image: "/images/aboutus/Owner5.jpeg",
   },
   {
-    name: "Somashekaragowda.m",
+    name: "Somashekaragowda.M",
     role: "Technical head",
     image: "/images/aboutus/Owner9.jpeg",
   },
@@ -31,7 +31,7 @@ const leaders = [
     image: "/images/aboutus/Owner8.jpeg",
   },
   {
-    name: "Ramesh venkati rathod",
+    name: "Ramesh Venkati Rathod",
     role: "Project Head Maharashtra",
     image: "/images/aboutus/Owner7.jpeg",
   },
